@@ -5,12 +5,10 @@ edition = "2021"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
-[patch.crates-io]
-riscv-rt = { git = "https://github.com/9names/riscv-rt", branch = "rv32e" }
-
 [dependencies]
+ch32v-rt = "0.0.3"
+ch32v00x-hal = { version = "0.1.0", git = "https://github.com/ch32-rs/ch32v00x-hal.git", default-features = false, features = ["ch32v003j4m6"] }
 panic-halt = "0.2.0"
-riscv-rt = "0.11.0"
 
 [profile.dev]
 opt-level = "s"
