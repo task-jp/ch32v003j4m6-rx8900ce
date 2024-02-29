@@ -1,0 +1,3 @@
+[toolchain]
+channel = "custom-rv32ec"
+

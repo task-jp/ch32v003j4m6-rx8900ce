@@ -9,5 +9,5 @@ rustflags = [
   "-C", "link-arg=-Tlink.x",
 ]
 
-#runner = "wlink -v flash --enable-sdi-print"
-runner = "wlink -v flash"
+runner = "wlink -v flash --enable-sdi-print --watch-serial"
+#runner = "wlink -v flash"

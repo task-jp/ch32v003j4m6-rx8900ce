@@ -8,8 +8,19 @@ edition = "2021"
 [dependencies]
 ch32v-rt = "0.0.3"
 ch32v00x-hal = { version = "0.1.0", git = "https://github.com/ch32-rs/ch32v00x-hal.git", default-features = false, features = ["ch32v003j4m6"] }
-panic-halt = "0.2.0"
+embedded-hal = "0.2.7"
+fugit = "0.3.7"
+# panic-halt = "0.2.0"
+qingke = "0.1.7"
+chrono = { version = "0.4.34", default-features = false }
+heapless = "0.8.0"
+
+[features]
+default = ["rtc"]
+sdi_print = []
+rtc = []
 
 [profile.dev]
-opt-level = "s"
-
+opt-level = 3
+overflow-checks = true
+lto = 'fat'
