@@ -4,10 +4,7 @@
 use ch32v00x_hal as hal;
 use ch32v_rt::entry;
 use chrono::NaiveDateTime;
-use chrono::Datelike;
-use chrono::Timelike;
 use hal::{i2c::*, pac::Peripherals, prelude::*};
-// use panic_halt as _;
 mod rx8900;
 use rx8900::Rx8900;
 use fugit::HertzU32 as Hertz;
