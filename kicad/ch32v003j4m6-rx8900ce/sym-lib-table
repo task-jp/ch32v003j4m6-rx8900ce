@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "ch32v003j4m6-rx8900")(type "KiCad")(uri "${KIPRJMOD}/ch32v003j4m6-rx8900.kicad_sym")(options "")(descr ""))
+)
