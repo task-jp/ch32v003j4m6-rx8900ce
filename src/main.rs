@@ -89,14 +89,15 @@ fn main() -> ! {
                 chrono::NaiveTime::from_hms_opt(0, 0, 0).unwrap(),
             )).unwrap();
         },
+        #[cfg(feature = "sdi_print")]
         Ok(false) => {
-            #[cfg(feature = "sdi_print")]
             println!("Voltage low flag is not set");
         },
+        #[cfg(feature = "sdi_print")]
         Err(e) => {
-            #[cfg(feature = "sdi_print")]
             println!("Error occured: {:?}", e);
-        }
+        },
+        _ => {}
     }
 
     #[cfg(feature = "rtc")]
