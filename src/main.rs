@@ -125,9 +125,8 @@ fn main() -> ! {
             last_second = second;
 
             let minutes = rx8900.min().unwrap();
-            let hour = rx8900.hour().unwrap();
             #[cfg(feature = "sdi_print")]
-            println!("{:02}:{:02}:{:02}", hour, minutes, second);
+            println!("{:02}:{:02}", minutes, second);
 
             match minutes {
                 55..=59 => {
