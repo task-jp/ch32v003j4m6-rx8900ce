@@ -107,13 +107,14 @@ fn main() -> ! {
     loop {
         #[cfg(feature = "rtc")]
         {
-            if counter == 60 {
+            if counter < 60 {
+                counter += 1;
+            } else {
                 rx8900.set_datetime(NaiveDateTime::new(
                     chrono::NaiveDate::from_ymd_opt(2024, 1, 1).unwrap(),
                     chrono::NaiveTime::from_hms_opt(0, 0, 0).unwrap(),
                 )).unwrap();
             }
-            counter += 1;
 
             let second = rx8900.sec().unwrap();
             if second == last_second {
