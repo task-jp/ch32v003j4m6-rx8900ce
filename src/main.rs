@@ -75,10 +75,7 @@ fn main() -> ! {
     let mut rx8900 = Rx8900::new(i2c);
 
     #[cfg(feature = "rtc")]
-    let vlf = rx8900.voltage_low_flag();
-
-    #[cfg(feature = "rtc")]
-    match vlf {
+    match rx8900.voltage_low_flag() {
         Ok(true) => {
             #[cfg(feature = "sdi_print")]
             println!("Voltage low flag is set");
