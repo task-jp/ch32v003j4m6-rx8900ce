@@ -167,7 +167,6 @@ fn main() -> ! {
             delay.delay_ms(500);
             green.set_low();
             delay.delay_ms(400);
-}
-
+        }
     }
 }
