@@ -102,18 +102,30 @@ fn main() -> ! {
     loop {
         #[cfg(feature = "rtc")]
         {
-            if counter < 60 {
+            let second = rx8900.sec().unwrap();
+            if second == last_second {
+                delay.delay_ms(10u32);
+                continue;
+            }
+
+            if counter < 20 {
                 counter += 1;
+            } else if counter < 30 {
+                counter += 1;
+                green.set_low();
+                red.set_high();
+                delay.delay_ms(500);
+                green.set_high();
+                red.set_low();
+                delay.delay_ms(400);
+                continue;
             } else {
+                green.set_high();
+                red.set_high();
                 rx8900.set_datetime(NaiveDateTime::new(
                     chrono::NaiveDate::from_ymd_opt(2024, 1, 1).unwrap(),
                     chrono::NaiveTime::from_hms_opt(0, 0, 0).unwrap(),
                 )).unwrap();
-            }
-
-            let second = rx8900.sec().unwrap();
-            if second == last_second {
-                delay.delay_ms(10u32);
                 continue;
             }
 
