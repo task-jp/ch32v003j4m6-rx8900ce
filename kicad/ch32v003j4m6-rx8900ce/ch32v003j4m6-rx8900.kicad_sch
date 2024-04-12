@@ -2436,18 +2436,6 @@
 		(uuid "bb9861bd-660e-486e-9937-8f2e72c4a18a")
 	)
 	(junction
-		(at 100.33 35.56)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "c38f2ab8-7453-4de9-ba57-6261ef613de7")
-	)
-	(junction
-		(at 107.95 43.18)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "c4bc7226-ee61-4e14-9818-e7875dc6e8c0")
-	)
-	(junction
 		(at 73.66 110.49)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2809,7 +2797,7 @@
 	)
 	(wire
 		(pts
-			(xy 107.95 43.18) (xy 161.29 43.18)
+			(xy 100.33 43.18) (xy 161.29 43.18)
 		)
 		(stroke
 			(width 0)
@@ -2866,16 +2854,6 @@
 			(type default)
 		)
 		(uuid "9bb94fc6-f728-4687-9635-a7b415a4d3a6")
-	)
-	(wire
-		(pts
-			(xy 107.95 35.56) (xy 107.95 43.18)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a286efec-9107-4c59-b866-70f51e5a5746")
 	)
 	(wire
 		(pts
@@ -3136,16 +3114,6 @@
 			(type default)
 		)
 		(uuid "e89686b2-55ee-46af-ad93-6e457183a85a")
-	)
-	(wire
-		(pts
-			(xy 100.33 43.18) (xy 107.95 43.18)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "efcb9167-4772-403e-9b81-54aa813e6bba")
 	)
 	(wire
 		(pts
@@ -4001,74 +3969,6 @@
 			(project "ch32v003j4m6-rx8900"
 				(path "/424fe271-0158-474b-80ae-eb8e56e5ec9a"
 					(reference "#FLG03")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 104.14 35.56 90)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "67fff8dc-a17a-49be-825c-a1183fb9ba36")
-		(property "Reference" "C4"
-			(at 104.14 27.94 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "C"
-			(at 104.14 30.48 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 107.95 36.5252 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 104.14 35.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 104.14 35.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "acd71751-90ee-4242-aa0a-58ca7153c1bd")
-		)
-		(pin "1"
-			(uuid "6fd00fd6-2dfb-4a17-96b8-8423c42b6708")
-		)
-		(instances
-			(project "ch32v003j4m6-rx8900"
-				(path "/424fe271-0158-474b-80ae-eb8e56e5ec9a"
-					(reference "C4")
 					(unit 1)
 				)
 			)
