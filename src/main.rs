@@ -137,11 +137,11 @@ fn main() -> ! {
 
             match minutes {
                 55..=59 => {
-                    // 待ち合わせ時間直前5分間は赤を点滅
-                    green.set_low();
-                    red.set_high();
-                    delay.delay_ms(500);
+                    // 待ち合わせ時間直前5分間は緑を点滅
                     red.set_low();
+                    green.set_high();
+                    delay.delay_ms(500);
+                    green.set_low();
                     delay.delay_ms(400);
                 },
                 0..=4 => {
@@ -151,11 +151,11 @@ fn main() -> ! {
                     delay.delay_ms(900);
                 },
                 5..=9 => {
-                    // 待ち合わせ時間が過ぎたら5分間緑を点滅
-                    green.set_high();
-                    red.set_low();
-                    delay.delay_ms(500);
+                    // 待ち合わせ時間が過ぎたら5分間赤を点滅
+                    red.set_high();
                     green.set_low();
+                    delay.delay_ms(500);
+                    red.set_low();
                     delay.delay_ms(400);
                 },
                 _ => {
