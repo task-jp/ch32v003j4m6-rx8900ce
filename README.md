@@ -23,6 +23,7 @@ Simple two LEDs clock that tells first 5mins in hours.
 ![layout](./resources/pcb_v0.1.png)
 
 ## Bill Of Materials
+
 |Ref     |Name          |Qty|Description     |Link                                        |
 |--------|--------------|  -|----------------|--------------------------------------------|
 |U1      |CH32V003J4M6  |  1|Micro Controller|https://akizukidenshi.com/catalog/g/g118062/|
@@ -34,6 +35,16 @@ Simple two LEDs clock that tells first 5mins in hours.
 |R1,R2   |Resistor 200  |  2|LED limit       |https://akizukidenshi.com/catalog/g/g106201/|
 |R3,R4   |Resistor 3K3  |  2|Pull up         |https://akizukidenshi.com/catalog/g/g114661/|
 |SW1     |Push Switch   |  1|                |https://akizukidenshi.com/catalog/g/g115969/|
+
+## Case
+
+![case](./resources/fusion_v0.1.png)
+
+
+- [Fusion f3d file](./fusion/ch32v003j4m6-rx8900.f3d)
+- STL
+  - [Front](fusion/ch32v003j4m6-case-front.stl)
+  - [Back](fusion/ch32v003j4m6-case-back.stl)
 
 ## License
 * MIT
