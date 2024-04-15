@@ -2,7 +2,7 @@
 
 Simple two LEDs clock that tells first 5mins in hours.
 
-![photo](./resources/gatheringclock_v0.1.jpg)
+![photo](./resources/gatheringclock_v0.1.gif)
 
 ## Features
 
