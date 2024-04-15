@@ -2,8 +2,7 @@
 
 Simple two LEDs clock that tells first 5mins in hours.
 
-![photo](./resources/photo-front_v0.1.jpg)
-![photo](./resources/photo-back_v0.1.jpg)
+![photo](./resources/gatheringclock_v0.1.jpg)
 
 ## Features
 
@@ -36,15 +35,17 @@ Simple two LEDs clock that tells first 5mins in hours.
 |R3,R4   |Resistor 3K3  |  2|Pull up         |https://akizukidenshi.com/catalog/g/g114661/|
 |SW1     |Push Switch   |  1|                |https://akizukidenshi.com/catalog/g/g115969/|
 
+![photo](./resources/photo-front_v0.1.jpg)
+![photo](./resources/photo-back_v0.1.jpg)
+
 ## Case
-
-![case](./resources/fusion_v0.1.png)
-
 
 - [Fusion f3d file](./fusion/ch32v003j4m6-rx8900.f3d)
 - STL
   - [Front](fusion/ch32v003j4m6-case-front.stl)
   - [Back](fusion/ch32v003j4m6-case-back.stl)
+
+![case](./resources/case_v0.1.png)
 
 ## License
 * MIT
