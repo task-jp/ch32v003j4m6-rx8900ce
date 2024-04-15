@@ -45,7 +45,7 @@ Simple two LEDs clock that tells first 5mins in hours.
   - [Front](fusion/ch32v003j4m6-case-front.stl)
   - [Back](fusion/ch32v003j4m6-case-back.stl)
 
-![case](./resources/case_v0.1.png)
+![case](./resources/case_v0.1.jpg)
 
 ## License
 * MIT
