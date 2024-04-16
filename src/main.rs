@@ -5,7 +5,6 @@ use ch32v00x_hal as hal;
 use ch32v_rt::entry;
 use chrono::NaiveDateTime;
 use hal::{i2c::*, pac::Peripherals, prelude::*};
-mod rx8900;
 use rx8900::Rx8900;
 use fugit::HertzU32 as Hertz;
 use embedded_hal::blocking::delay::DelayMs;
@@ -76,8 +75,8 @@ fn main() -> ! {
         Ok(true) => {
             #[cfg(feature = "sdi_print")]
             println!("Voltage low flag is set");
-            delay.delay_ms(1000u32);
             rx8900.init().unwrap();
+            delay.delay_ms(10u32);
             rx8900.set_datetime(NaiveDateTime::new(
                 chrono::NaiveDate::from_ymd_opt(2024, 1, 1).unwrap(),
                 chrono::NaiveTime::from_hms_opt(0, 0, 0).unwrap(),
